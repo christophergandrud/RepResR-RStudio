@@ -6169,9 +6169,9 @@ a.badge:focus {
 .affix {
   position: fixed;
   top: 50px;
-  left: 5px;
+  left: 1px;
   height: 38px;
-  width: 90%;
+  width: 100%;
 }
 
 body {
