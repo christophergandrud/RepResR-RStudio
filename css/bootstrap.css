@@ -225,7 +225,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Open Sans", Palatino, Candara;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
@@ -4523,7 +4523,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
