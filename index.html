@@ -16,6 +16,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/bootswatch.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="http://s3.buysellads.com/ac/bsa.js"></script>
 
     <!-- Code syntax highlight -->
     <link href='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css' rel='stylesheet' type='text/css'/>
@@ -40,10 +41,16 @@
   </head>
 
   <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+    <script src="js/bsa.js"></script>
 
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
       <a class="brand" href="index.html">Reproducible Research</a>
       <ul class="nav pull-right" id="purchaseNave">
         <li class="dropdown">
@@ -74,32 +81,39 @@
           <h1>Reproducible Research</h1>
           <br>
           <h2>with R &amp; RStudio</h2>
-          <p class="pull-right lead">
-           <a href="http://www.crcpress.com/">Chapman &amp; Hall/CRC Press</a><br>
-           <a href="http://www.crcpress.com/browse/series/?series_id=2731">The R Series</a>         
-          </p>
-          <p class="lead">Christopher Gandrud</p>
+          <div class="row">
+            <div class="span3">
+              <p class="lead">Christopher Gandrud</p>
+            </div>
+            <div class="span3 offset5">
+              <p class="lead">
+              <a href="http://www.crcpress.com/">Chapman &amp; Hall/CRC Press</a><br>
+              <a href="http://www.crcpress.com/browse/series/?series_id=2731">The R Series</a>         
+            </p>
+          </div>
         </div>
       </div>
-      <div class="alert-success">
-        <center>
-          <p>Expected publication: August 2013</p>
-        </center>
-      </div>
+
       <div class="row">
         <div class="span12">
-          <div class="subnav affix-top" data-spy="affix" data-offset-top="440">
+          <div class="subnav">
             <ul class="nav nav-pills">
               <li><a href="#overview">Overview</a></li>
               <li><a href="#who">Who is it for?</a></li>
               <li><a href="#toc">Table of Contents</a></li>
               <li><a href="#purchase">Purchase</a></li>
-              <li><a href="#supplement">Supplementary Materials</a></li>
+              <li><a href="#supplement">Extra Materials</a></li>
               <li><a href="#author">Author</a></li>
             </ul>
           </div>
-        </div>
+
+          <div class="alert-success">
+            <center>
+              <h4>Expected Publication: August 2013</h4>
+            </center>
+          </div>
       </div>
+    </div>
     </header>
 
     <br><br><br>
@@ -199,10 +213,10 @@
 
     </section>
 
-    <!-- Supplementary Materials -->
+    <!-- Extra Materials -->
     <section>
       <div class="page-header" id="supplement">
-        <h2>Supplementary Materials</h2>
+        <h2>Extra Materials</h2>
       </div>
       <div class="row">
         <div class="span10 offset1">
@@ -268,7 +282,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
     <script src="js/bootstrap.scrollspy.js"></script>
+    <script src="js/bootswatch.js"></script>
 
   </body>
 </html>
