@@ -15,6 +15,27 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Code syntax highlight -->
+    <link href='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css' rel='stylesheet' type='text/css'/>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'/>
+    <script src='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js' type='text/javascript '/>
+    <script type='text/javascript'>
+    $(function(){ 
+        $(&#39;pre&#39;).css({
+            &#39;overflow-x&#39;: &#39;scroll&#39;,
+            &#39;background-color&#39;: &#39;#f6f6f6&#39;,
+            &#39;border&#39;: &#39;1px dotted #ccc&#39;,
+            &#39;padding&#39;: &#39;0.8em&#39;
+        });
+        $(&#39;pre code&#39;).addClass(&#39;prettyprint&#39;);
+        prettyPrint();
+    });
+    </script>
+
+    <!-- MathJax -->
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+    </script>
   </head>
 
   <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
@@ -69,7 +90,8 @@
           <div class="subnav affix-top" data-spy="affix" data-offset-top="440">
             <ul class="nav nav-pills">
               <li><a href="#overview">Overview</a></li>
-              <li><a href="#who">Who Should Read It</a></li>
+              <li><a href="#who">Who is it for?</a></li>
+              <li><a href="#toc">Table of Contents</a></li>
               <li><a href="#purchase">Purchase</a></li>
               <li><a href="#supplement">Supplementary Materials</a></li>
               <li><a href="#author">Author</a></li>
@@ -108,13 +130,13 @@
       <br><br>
       <div class="row">
         <div class="span3">
-          <p><a href="http://www.rstudio.com/">RStudio</a>: an integrated developer environment (IDE) for R that tightly integrates R, knitr, and markup languages.</p>
+         <p><strong>Unix-like shell programs</strong>: These tools are useful for working with large research projects. They also allow us to use command line tools including <a href="http://www.gnu.org/software/make/">GNU Make</a> for compiling projects and <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, a program useful for converting documents from one markup language to another.</p>
         </div>
         <div class="span3 offset1">
           <p><strong>Cloud storage &amp; versioning</strong>: Services such as <a href="https://www.dropbox.com">Dropbox</a> and <a href="http://git-scm.com/">Git</a>/<a href="https://github.com/">Github</a> that can store data, code, and presentation files, save previous versions of these files, and make this information widely available.</p>
         </div>
         <div class="span3 offset1">
-          <p><strong>Unix-like shell programs</strong>: These tools are useful for working with large research projects. They also allow us to use command line tools including <a href="http://www.gnu.org/software/make/">GNU Make</a> for compiling projects and <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, a program useful for converting documents from one markup language to another.</p>
+          <p><a href="http://www.rstudio.com/">RStudio</a>: an integrated developer environment (IDE) for R that tightly integrates these reproducible research tools in one place.</p>
         </div>
         <br><br><br><br>
       </div>
@@ -145,6 +167,13 @@
           <p><strong>Private Sector Researchers</strong>: Researchers in the private sector may or may not want to make their work easily reproducible outside of their organization. However, that does not mean that significant benefits cannot be gained from using the methods of reproducible research. Making your research reproducible to members of your organization can spread valuable information about how analyses were done and data was collected. This will help build your organization’s knowledge and avoid effort duplication. </p>
         </div>
         <br><br><br><br>
+      </div>
+    </section>
+
+    <!-- TOC -->
+    <section id="toc">
+      <div class="page-header">
+        <h2>Table of Contents</h2>
       </div>
 
     </section>
