@@ -8,37 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Reproducible Research with R and R Studio">
     <meta name="author" content="ChristopherGandrud">
-    
-    <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css" rel="stylesheet">
+
+    <!-- MathJax -->
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+    </script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/bootswatch.css" rel="stylesheet">
     <script type="text/javascript" src="http://s3.buysellads.com/ac/bsa.js"></script>
-    <link href="img/Chapman_logo.css" rel="stylesheet">
-
-    <!-- Code syntax highlight -->
-    <link href='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css' rel='stylesheet' type='text/css'/>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'/>
-    <script src='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js' type='text/javascript '/>
-    <script type='text/javascript'>
-    $(function(){ 
-        $(&#39;pre&#39;).css({
-            &#39;overflow-x&#39;: &#39;scroll&#39;,
-            &#39;background-color&#39;: &#39;#f6f6f6&#39;,
-            &#39;border&#39;: &#39;1px dotted #ccc&#39;,
-            &#39;padding&#39;: &#39;0.8em&#39;
-        });
-        $(&#39;pre code&#39;).addClass(&#39;prettyprint&#39;);
-        prettyPrint();
-    });
-    </script>
-
-    <!-- MathJax -->
-    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
-    </script>
   </head>
 
   <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
@@ -79,21 +58,24 @@
     <br><br>
     <header class="jumbotron subhead" id="overview">
       <div class="row">
-        <div class="span12">
+        <div class="span9">
           <h1>Reproducible Research</h1>
           <br>
           <h2>with R &amp; RStudio</h2>
-          <div class="row">
-            <div class="span3">
-              <p class="lead">Christopher Gandrud</p>
-            </div>
-            <div class="span3 offset5">
-              <p>
-              <a href="http://www.crcpress.com/browse/series/?series_id=1742"><img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="200" height="100"></a>
-              </p>
-          </div>
         </div>
       </div>
+      <div class="row">
+        <div class="span2">
+          <p class="lead">Christopher Gandrud</p>
+        </div>
+        <div class="span3 offset6">
+          <p>
+          <a href="http://www.crcpress.com/browse/series/?series_id=1742"><img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="200" height="100"></a>
+          </p>
+          <br>
+      </div>
+    </div>
+    
 
       <div class="row">
         <div class="span12">
@@ -110,7 +92,8 @@
 
           <div class="alert-warning">
             <center>
-              <h4>Expected Publication: August 2013</h4>
+              <br><br>
+              <p class="lead">Expected Publication: August 2013</p>
             </center>
           </div>
       </div>
@@ -194,6 +177,11 @@
         <h2>Table of Contents</h2>
       </div>
       <div class="row">
+        <div class="span11">
+          <p><strong>Download</strong> the full table of contents: <a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearchTOC.pdf"><img src="img/PDF_Logo.png" alt="Download PDF" height="20" width="20"></a></p>
+        </div>
+      </div>
+      <div class="row">
         <div class="span8 offset1">
             <ol>
               <center><h3><strong>Part I: Getting Started</strong></h3></center>       
@@ -268,7 +256,7 @@
         <h2>Extra Materials</h2>
       </div>
       <div class="row">
-        <div class="span10 offset">
+        <div class="span10 offset1">
           <p>You can freely download supplementary files used for examples discussed in the books chapters as well as a short, but complete reproducible research project.</p>
           <br><br>
         </div>
@@ -279,6 +267,15 @@
         </div>
         <div class="span4 offset1">
           <a class="btn btn-warning btn-large" href="https://github.com/christophergandrud/Rep-Res-ExampleProject1">Example Project</a>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="span10 offset1">
+          <p>In addition, feel free to install the <a href="http://christophergandrud.github.com/repmis/">repmis</a> package for R. The package includes tools for loading and citing other R packages (including old versions) and sourcing data sets from secure (https) URLs. These functions are coverd in more detail in the book.</p>
+          <p>To install <strong>repmis</strong> make sure that you have the <a href="https://github.com/hadley/devtools">devtools</a> package set up. Then type the following code into your R Console:</p>
+          <br><br>
+          <pre><code class="R">devtools::install_github("repmis", "christophergandrud")</code></pre>
         </div>
       </div>
 
@@ -349,6 +346,9 @@
     <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
     <script src="js/bootstrap.scrollspy.js"></script>
     <script src="js/bootswatch.js"></script>
-
+    <!-- Code syntax highlight -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/solarized_light.min.css">
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
