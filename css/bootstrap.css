@@ -744,7 +744,17 @@ h1 {
   text-rendering: optimizelegibility;
 }
 
-h2,
+h2 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 20px;
+  color: #4292C6;
+  text-rendering: optimizelegibility;
+}
+
+
+
 h3,
 h4,
 h5,
@@ -753,7 +763,7 @@ h6 {
   font-family: inherit;
   font-weight: 300;
   line-height: 20px;
-  color: #4292C6;
+  color: #666666;
   text-rendering: optimizelegibility;
 }
 
@@ -6183,7 +6193,7 @@ h1 {
 
 h2,
 h3 {
-  font-size: 26px;
+  font-size: 40px;
 }
 
 h4 {
