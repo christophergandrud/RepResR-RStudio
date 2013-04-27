@@ -8,6 +8,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Modified by Christopher Gandrud
  */
 
 .clearfix {
@@ -1221,7 +1222,7 @@ input[type="file"] {
 select {
   width: 220px;
   background-color: #ffffff;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #e2e2e2;
 }
 
 select[multiple],
@@ -4097,9 +4098,9 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: #bbbbbb;
+  color: #f6f6f6;
   cursor: default;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4117,7 +4118,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
-  color: #ffffff;
+  color: #f6f6f6;
   background-color: #007fff;
 }
 
@@ -4208,8 +4209,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: #bbbbbb;
-  border-bottom-color: #bbbbbb;
+  border-top-color: #f6f6f6;
+  border-bottom-color: #f6f6f6;
 }
 
 .nav > .dropdown.active > a:hover,
@@ -4453,7 +4454,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #bbbbbb;
+  color: #e2e2e2;
 }
 
 .navbar .divider-vertical {
@@ -4637,7 +4638,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #bbbbbb;
+  color: #e2e2e2;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -6267,7 +6268,7 @@ a.text-success:hover {
 }
 
 .navbar .brand:hover {
-  color: #bbbbbb;
+  color: #e2e2e2;
 }
 
 .navbar .nav > .active > a,
@@ -6368,7 +6369,7 @@ div.subnav-fixed {
 
 .nav-tabs.nav-stacked > .active > a,
 .nav-tabs.nav-stacked > .active > a:hover {
-  color: #bbbbbb;
+  color: #e2e2e2;
   background-color: #ffffff;
 }
 
@@ -6388,7 +6389,7 @@ div.subnav-fixed {
 }
 
 .nav-pills > li > a {
-  color: #FFFFD4;
+  color: #ffffff;
   background-color: #EC7014;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
