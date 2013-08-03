@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reproducible Research Errata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reproducible Research">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Reproducible Research with R and R Studio">
+    <meta name="author" content="ChristopherGandrud">
+
+    <!-- MathJax -->
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootswatch.css" rel="stylesheet">
+    <script type="text/javascript" src="http://s3.buysellads.com/ac/bsa.js"></script>
+  </head>
+
+<!---- Body ---->
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+    <script src="js/bsa.js"></script>
+
+<!------------------ NavBar -------------------------->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+      <a class="brand" href="index.html">Reproducible Research</a>
+      <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav pull-right" id="purchaseNave">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purchase 
+          <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.crcpress.com/product/isbn/9781466572843">Chapman &amp; Hall</a></li>
+            <li><a href="http://www.amazon.co.uk/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363415589&sr=8-1">Amazon.co.uk</a></li>
+            <li><a href="http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363670109&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.com</a></li>
+            <li><a href="http://www.amazon.ca/Reproducible-Research-RStudio-Christopher-Gandrud/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636359&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.ca</a></li>
+            <li><a href="http://www.amazon.de/Reproducible-Research-Rstudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636825&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">Amazon.de</a></li>
+            <li><a href="http://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=BNT&mallGb=ENG&barcode=9781466572843&orderClick=LAG&Kc=">교보문고</a></li>
+            <li><a href="http://www.amazon.cn/Reproducible-Research-with-R-and-RStudio-Gandrud-Christopher/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369637503&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">亚马逊中国</a></li>
+            <li><a href="http://www.amazon.co.jp/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636674&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">アマゾン シーオー ジェーピー</a></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+     </div>
+  </div>
+</div>
+
+<br><br>
+
+  <div class="container">
+
+    <h1>Errata</h1>
+
+    <section>
+    <div class="row">
+        <div class="span10 offset1">
+
+        <p>This page contains corrections to typos in <a href="index">Reproducible Research with R and RStudio</a>. All of the corrections have been incorporated into the beta source code for <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">Version 2</a> of the book and will be in any future printed editions.</p>
+
+        <p>If you notice any corrections that should be made to the text please report them on the Book's GitHub <a href="https://github.com/christophergandrud/Rep-Res-Book/issues">Issues page</a>.</p>
+
+            <h2>Front Matter</h2>
+
+            <ul>
+                <li>p. xvii: Missing comma after <code>"digest"</code> in the first code example.</li>
+            </ul>
+
+            <h2>Chapter 5</h2>
+
+            <ul>
+                <li>p. 88: The code example <code class="R">git checkout --</code> should be <code>git checkout -- .</code>. Note that there is a space between the two dashes and the period. Omitting the <code> .</code> will still restore text in files from the previous Git commit, but will not restore deleted files. 
+                <br>
+                <br>
+                <p>This change should also be reflected in the second sentence following the example. Thanks to David Arnold for noticing this.</p></li>
+            </ul>
+
+            <h2>Chapter 6</h2>
+            <ul>
+                <li>p. 103: The code examples:
+                <br>
+                <br>
+                <pre><code class="R">source("/GatherSource/IndvDataGather/Gather1.R") 
+source("/GatherSource/IndvDataGather/Gather2.R") 
+source("/GatherSource/IndvDataGather/Gather3.R")</code></pre>
+               <br>
+                Should be:
+               <br>
+               <br>
+                <pre><code class="R">source("GatherSource/Gather1.R") 
+source("GatherSource/Gather2.R") 
+source("GatherSource/Gather3.R")</code></pre>
+                Thanks to David Arnold.
+                </li>
+                <br>
+                <li>p. 104: "newer than its prerequisite. Make does not" should read "newer than its prerequisite, Make does not". Thanks to David Arnold.</li>
+            </ul>
+
+        </div>
+    </div>
+    </section>
+
+    <br><br>
+    <!-- Footer
+    ================================================== -->     
+    <div class="row">
+      <div class="span12">
+        <hr>
+
+        <footer id="footer">
+            <p class="pull-right"><a href="#top">Back to top</a>
+            <br><br><br>
+            <a href="http://www.crcpress.com/"><img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="80" height="30"></a>
+            </p>
+            <p>&copy; Christopher Gandrud 2013 <a href="http://christophergandrud.blogspot.kr/p/biocontact.html"><img src="img/avatar.png" alt="Blog Avatar" height="45" width="45"></p>
+            <div class="links">
+              <a href="http://christophergandrud.blogspot.com/">Blog </a>
+              <a href="mailto:christopher.gandrud@gmail.com">Email</a>
+              <a href="https://twitter.com/ChrisGandrud"><img src="img/twitter-bird-Logo.png" alt="@ChrisGandrud" height="45" width="45"></a>
+              <a href="https://github.com/christophergandrud"><img src="img/Octocat.png" alt="Gandrud GitHub page" height="45" width="45"></a>
+            </div>
+            <br>
+            The site is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://bootswatch.com/cosmo/">Bootswatch Cosmo</a>.
+        </footer>
+      </div>
+    </div>
+    </div>
+
+    <br><br>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39387415-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <script src="js/bootstrap.scrollspy.js"></script>
+    <script src="js/bootswatch.js"></script>
+    <!-- Code syntax highlight -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/solarized_light.min.css">
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
