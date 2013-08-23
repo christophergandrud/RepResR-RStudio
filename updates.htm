@@ -59,55 +59,21 @@
 
   <div class="container">
 
-    <h1>Errata</h1>
+    <h1>Updates</h1>
 
     <section>
     <div class="row">
         <div class="span10 offset1">
+          <p>The software underlying <a href="index.html">Reproducible Research with R and RStudio</a> is constantly changing. This page contains a list of major software updates. I am continually working on an <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">updated version</a> of the Book that will include these updates.</p>
 
-        <p>This page contains corrections to typos in <a href="index">Reproducible Research with R and RStudio</a>. All of the corrections have been incorporated into the beta source code for <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">Version 2</a> of the book and will be in any future printed editions. Note: <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">Version 2</a> is also being continuously updated to take account of changes to the software discussed in the book.</p>
+          <p>If you have any suggestions for software updates to include on this page please suggest them on the <a href="https://github.com/christophergandrud/Rep-Res-Book/issues?sort=created&state=open">Book's development page</a>.</p>
 
-        <p>If you notice any corrections that should be made to the text please report them on the Book's GitHub <a href="https://github.com/christophergandrud/Rep-Res-Book/issues">Issues page</a>.</p>
+          <h2>RStudio</h2>
 
-            <h2>Front Matter</h2>
+          <p>Note that the book was written with the current development version of RStudio (version 0.98). It has not been officially released yet, but it can be freely downloaded for a variety of operating systems <a href="http://www.rstudio.org/download/daily/desktop/">here</a>. I've been using it for months now and it is generally very stable for all of the functions covered in the Book.</p>
 
-            <ul>
-                <li>p. xvii: Missing comma after <code>"digest"</code> in the first code example.</li>
-            </ul>
-
-            <h2>Chapter 5</h2>
-
-            <ul>
-                <li>p. 86: In "into a sub-folder called <i>Objects</i>", <i>Objects</i> should begin with a lowercase letter o. Thanks to David Arnold for noticing this.</li>
-                <br>
-                <li>p. 88: The code example <code class="R">git checkout --</code> should be <code>git checkout -- .</code>. Note that there is a space between the two dashes and the period. Omitting the <code> .</code> will still restore text in files from the previous Git commit, but will not restore deleted files. 
-                <br>
-                <br>
-                <p>This change should also be reflected in the second sentence following the example. Thanks to David Arnold.</p></li>
-                <li>p. 92: "Image that the URL" should be "Imagine that the URL". Thanks to David Arnold</li>
-            </ul>
-
-            <h2>Chapter 6</h2>
-            <ul>
-                <li>p. 103: The code examples:
-                <br>
-                <br>
-                <pre><code class="R">source("/GatherSource/IndvDataGather/Gather1.R") 
-source("/GatherSource/IndvDataGather/Gather2.R") 
-source("/GatherSource/IndvDataGather/Gather3.R")</code></pre>
-               <br>
-                should be:
-               <br>
-               <br>
-                <pre><code class="R">source("GatherSource/Gather1.R") 
-source("GatherSource/Gather2.R") 
-source("GatherSource/Gather3.R")</code></pre>
-                Thanks to David Arnold.
-                </li>
-                <br>
-                <li>p. 104: "newer than its prerequisite. Make does not" should read "newer than its prerequisite, Make does not". Thanks to David Arnold.</li>
-            </ul>
-
+          <h2>knitr</h2>
+          <p><strong>Update to Chapter 8 (23-08-2013):</strong> From at least version 1.4.1 the R <em>knitr</em> package is now capable of highlighting syntax from a variety of non-R languages. To make this work properly you will need to install Andre Simon's <em>highlight</em> utility. See <a href="http://www.andre-simon.de/zip/download.html">his website</a> for download and installation instructions. </p>
         </div>
     </div>
     </section>
@@ -168,4 +134,3 @@ source("GatherSource/Gather3.R")</code></pre>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
-
