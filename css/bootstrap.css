@@ -847,8 +847,8 @@ ol ul {
 li {
   line-height: 20px;
   font-size: 17px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top:  : 10px;
+  padding-bottom: : 10px;
 }
 
 ul.unstyled,
@@ -6396,6 +6396,7 @@ div.subnav-fixed {
 .nav-pills > li > a {
   color: #ffffff;
   background-color: #EC7014;
+  padding-bottom: 0;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
