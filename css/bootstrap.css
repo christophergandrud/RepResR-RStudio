@@ -4444,6 +4444,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand:hover,
 .navbar .brand:focus {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .navbar-text {
@@ -4458,7 +4459,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #e2e2e2;
+  color: #ffffff;
 }
 
 .navbar .divider-vertical {
