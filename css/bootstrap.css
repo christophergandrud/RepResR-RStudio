@@ -847,6 +847,8 @@ ol ul {
 li {
   line-height: 20px;
   font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 ul.unstyled,
@@ -1022,6 +1024,8 @@ pre {
   word-wrap: break-word;
   white-space: pre;
   white-space: pre-wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);

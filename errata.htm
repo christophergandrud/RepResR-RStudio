@@ -12,7 +12,7 @@
     <!-- MathJax -->
     <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
     </script>
-
+      
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -42,7 +42,7 @@
           <ul class="dropdown-menu">
             <li><a href="http://www.crcpress.com/product/isbn/9781466572843">Chapman &amp; Hall</a></li>
             <li><a href="http://www.amazon.co.uk/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363415589&sr=8-1">Amazon.co.uk</a></li>
-            <li><a href="http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363670109&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.com</a></li>
+            <li><a href="http://www.amazon.com/dp/1466572841">Amazon.com</a></li>
             <li><a href="http://www.amazon.ca/Reproducible-Research-RStudio-Christopher-Gandrud/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636359&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.ca</a></li>
             <li><a href="http://www.amazon.de/Reproducible-Research-Rstudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636825&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">Amazon.de</a></li>
             <li><a href="http://www.amazon.fr/Reproducible-Research-With-R-RStudio/dp/1466572841/ref=tmm_gpb_title_0?ie=UTF8&qid=1379319732&sr=8-1">Amazon.fr</a></li>
@@ -74,14 +74,13 @@
 
               <ul>
                 <li>One of the reprints created defective copies with the print being too light to read. If you have purchased one of these copies please contact the publisher for a replacement and supply the ISBN:
-                <br><br>
                 	<ul>
-		                <li>Phone: 1-800-634-0764<br>
+                            <li>Phone: 1-800-634-0764<br>
 							Fax: 1-800-248-4724<br>
 							E-mail: <a href="mailto:orders@taylorandfrancis.com">orders@taylorandfrancis.com</a><br>
 							ISBN: 978-1-4665-7284-3</li>
 		                </li>
-                	</ul><br>
+                	</ul>
                 <li>Misspelling of Donoho as "Donohue". Thank you to David Scott.</li>
               </ul>
 
@@ -94,9 +93,9 @@
             <h2>Chapter 3</h2>
 
             <ul>
-              <li>p. 49: In the second code chunk the comment is "Example of a non-evaluated code chunk". It should read "non-echoed" rather than "non-evaluated". Thanks to Jennifer Bryan.</li>
-              <br>
-              <li>p. 55: In the second paragraph "you first set us the" should be "you first use". Thanks to Jennifer Bryan.</li>
+                <li>p. 46 (Figure 3.4): In the Markdown example, the first box should read "Website.Rmd" instead of "Website.Rnw".</li>
+                <li>p. 49: In the second code chunk the comment is "Example of a non-evaluated code chunk". It should read "non-echoed" rather than "non-evaluated". Thanks to Jennifer Bryan.</li>
+                <li>p. 55: In the second paragraph "you first set us the" should be "you first use". Thanks to Jennifer Bryan.</li>
             </ul>
 
             <h2>Chapter 4</h2>
@@ -106,45 +105,37 @@
             </ul>
 
             <h2>Chapter 5</h2>
-
             <ul>
                 <li>p. 77 and 79: Values, rather than rows are separated by tabs/commas. Thanks to Jennifer Bryan.</li>
-                <br>
                 <li>p. 86: In "into a sub-folder called <i>Objects</i>", <i>Objects</i> should begin with a lowercase letter o. Thanks to David Arnold for noticing this.</li>
-                <br>
-                <li>p. 88: The code example <code class="R">git checkout --</code> should be <code>git checkout -- .</code>. Note that there is a space between the two dashes and the period. Omitting the <code> .</code> will still restore text in files from the previous Git commit, but will not restore deleted files. 
-                <br>
-                <br>
+                <li><p>p. 88: The code example <code class="R">git checkout --</code> should be <code>git checkout -- .</code>. Note that there is a space between the two dashes and the period. Omitting the <code> .</code> will still restore text in files from the previous Git commit, but will not restore deleted files.</p>
                 <p>This change should also be reflected in the second sentence following the example. Note that if you replace the <code>--</code> with a commit reference, you should still include the <code> .</code> following the reference. Thanks to David Arnold.</p></li>
                 <li>p. 92: "Image that the URL" should be "Imagine that the URL". Thanks to David Arnold</li>
             </ul>
 
             <h2>Chapter 6</h2>
             <ul>
-                <li>p. 103: The code examples:
-                <br>
-                <br>
+                <li><p>p. 103: The code examples:</p>
                 <pre><code class="R">source("/GatherSource/IndvDataGather/Gather1.R") 
 source("/GatherSource/IndvDataGather/Gather2.R") 
 source("/GatherSource/IndvDataGather/Gather3.R")</code></pre>
-               <br>
-                should be:
-               <br>
-               <br>
+
+                <p>should be:</p>
+
                 <pre><code class="R">source("GatherSource/Gather1.R") 
 source("GatherSource/Gather2.R") 
 source("GatherSource/Gather3.R")</code></pre>
                 Thanks to David Arnold.
                 </li>
-                <br>
+
                 <li>p. 104: "newer than its prerequisite. Make does not" should read "newer than its prerequisite, Make does not". Thanks to David Arnold.</li>
             </ul>
             <h2>Chapter 9</h2>
             <ul>
-            <li>p. 165: "center-right-right" should read "left-center-center".</li>
-            <li>p. 168: A note regarding the border="1" tag should be added that the default RStudio style sheet does not include table borders, so this markup will not add borders. </li>
-            <li>p. 169: "Just as read.csv turns . . ." should read "Just as write.csv turns . . .".</li>
-            <li>p. 169: In footnote 19 it should read: "In later examples we will see that individual explanatory variables are generally separated by plus signs". Thanks to David Arnold for highlighting these Chapter 9 issues.</li>
+                <li>p. 165: "center-right-right" should read "left-center-center".</li>
+                <li>p. 168: A note regarding the <code>border="1"</code> tag should be added that the default RStudio style sheet does not include table borders, so this markup will not add borders. </li>
+                <li>p. 169: "Just as <code>read.csv</code> turns . . ." should read "Just as <code>write.csv</code> turns . . .".</li>
+                <li>p. 169: In footnote 19 it should read: "In later examples we will see that individual explanatory variables are generally separated by plus signs". Thanks to David Arnold for highlighting these Chapter 9 issues.</li>
             </ul>
 
         </div>
