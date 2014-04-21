@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Reproducible Research Errata</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,350 +13,422 @@
     <!-- MathJax -->
     <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
     </script>
-      
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/bootswatch.css" rel="stylesheet">
     <script type="text/javascript" src="http://s3.buysellads.com/ac/bsa.js"></script>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  </head>
+</head>
 
-  <!----------------- Body --------------------------->
-  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+<!----------------- Body --------------------------->
+
+<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
     <script src="js/bsa.js"></script>
 
-<!------------------ NavBar -------------------------->
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </a>
-      <a class="brand" href="index.html">Reproducible Research</a>
-      <div class="nav-collapse collapse" id="main-menu">
-        <ul class="nav pull-right" id="purchaseNave">
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purchase 
+    <!------------------ NavBar -------------------------->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">Reproducible Research</a>
+                <div class="nav-collapse collapse" id="main-menu">
+                    <ul class="nav pull-right" id="purchaseNave">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Purchase
           <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.crcpress.com/product/isbn/9781466572843">Chapman &amp; Hall</a></li>
-            <li><a href="http://www.amazon.co.uk/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363415589&sr=8-1">Amazon.co.uk</a></li>
-            <li><a href="http://www.amazon.com/dp/1466572841">Amazon.com</a></li>
-            <li><a href="http://www.amazon.ca/Reproducible-Research-RStudio-Christopher-Gandrud/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636359&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.ca</a></li>
-            <li><a href="http://www.amazon.de/Reproducible-Research-Rstudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636825&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">Amazon.de</a></li>
-            <li><a href="http://www.amazon.fr/Reproducible-Research-With-R-RStudio/dp/1466572841/ref=tmm_gpb_title_0?ie=UTF8&qid=1379319732&sr=8-1">Amazon.fr</a></li>
-            <li><a href="http://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=BNT&mallGb=ENG&barcode=9781466572843&orderClick=LAG&Kc=">교보문고</a></li>
-            <li><a href="http://www.amazon.co.jp/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636674&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">アマゾン シーオー ジェーピー</a></li>
-            </ul>
-          </li>
-        </ul>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.crcpress.com/product/isbn/9781466572843">Chapman &amp; Hall</a>
+                                </li>
+                                <li><a href="http://www.amazon.co.uk/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363415589&sr=8-1">Amazon.co.uk</a>
+                                </li>
+                                <li><a href="http://www.amazon.com/dp/1466572841">Amazon.com</a>
+                                </li>
+                                <li><a href="http://www.amazon.ca/Reproducible-Research-RStudio-Christopher-Gandrud/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636359&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">Amazon.ca</a>
+                                </li>
+                                <li><a href="http://www.amazon.de/Reproducible-Research-Rstudio-Chapman-Hall/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636825&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">Amazon.de</a>
+                                </li>
+                                <li><a href="http://www.amazon.fr/Reproducible-Research-With-R-RStudio/dp/1466572841/ref=tmm_gpb_title_0?ie=UTF8&qid=1379319732&sr=8-1">Amazon.fr</a>
+                                </li>
+                                <li><a href="http://www.kyobobook.co.kr/product/detailViewEng.laf?ejkGb=BNT&mallGb=ENG&barcode=9781466572843&orderClick=LAG&Kc=">교보문고</a>
+                                </li>
+                                <li><a href="http://www.amazon.co.jp/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1369636674&sr=8-1&keywords=Reproducible+Research+with+R+and+RStudio">アマゾン シーオー ジェーピー</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-     </div>
-  </div>
-</div>
+    </div>
 
-<br><br>
+    <br>
+    <br>
 
-  <div class="container">
+    <div class="container">
 
-    <!-- Masthead
+        <!-- Masthead
     ================================================== -->
-    <br><br>
-    <header class="jumbotron subhead" id="overview">
-      <div class="row">
-        <div class="span9">
-          <h1>Reproducible Research</h1>
-          <br>
-          <h2>with R &amp; RStudio</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span2">
-          <p class="lead">Christopher Gandrud</p>
-        </div>
-        <div class="span3 offset6">
-          <p>
-          <a href="http://www.crcpress.com/"><img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="200" height="100"></a>
-          </p>
-          <br>
-      </div>
-    </div>
-      <div class="row">
-        <div class="span12">
-          <div class="subnav">
-            <ul class="nav nav-pills">
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#who">Who is it for?</a></li>
-              <li><a href="#toc">Table of Contents</a></li>
-              <li><a href="#purchase">Purchase</a></li>
-              <li><a href="#supplement">Extra Materials</a></li>
-              <li><a href="#author">Author</a></li>
-              <li><a href="#suggestions">Updates/Errata</a></li>
-            </ul>
-          </div>
-      </div>
-    </div>
-    </header>
+        <br>
+        <br>
+        <header class="jumbotron subhead" id="overview">
+            <div class="row">
+                <div class="span9">
+                    <h1>Reproducible Research</h1>
+                    <br>
+                    <h2>with R &amp; RStudio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span2">
+                    <p class="lead">Christopher Gandrud</p>
+                </div>
+                <div class="span3 offset6">
+                    <p>
+                        <a href="http://www.crcpress.com/">
+                            <img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="200" height="100">
+                        </a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="subnav">
+                        <ul class="nav nav-pills">
+                            <li><a href="#overview">Overview</a>
+                            </li>
+                            <li><a href="#who">Who is it for?</a>
+                            </li>
+                            <li><a href="#toc">Table of Contents</a>
+                            </li>
+                            <li><a href="#purchase">Purchase</a>
+                            </li>
+                            <li><a href="#supplement">Extra Materials</a>
+                            </li>
+                            <li><a href="#author">Author</a>
+                            </li>
+                            <li><a href="#suggestions">Updates/Errata</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- About the Book -->
-    <section id="overview">
-      <div class="page-header">
-        <h2>Overview of the Book</h2>
-      </div>
-      <div class="row">
-        <div class="span11">
-          <blockquote><em>Reproducible Research with R &amp; RStudio</em> gives you tools for data gathering, analysis, and presentation of results so that you can create dynamic and highly reproducible research.</blockquote>
-          <br>
-          <p class="lead"><strong>Tools you will learn as part of a reproducible research workflow:</strong></p>
-          <br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span5 offset1">
-          <p><a href="http://www.r-project.org/">R</a>: a programming language primarily for statistics and graphics. We will focus on using it for dynamic data gathering and presenting results.</p>
-        </div>
-        <div class="span5">
-          <p><a href="http://yihui.name/knitr/">knitr</a>: an R package for literate programming, i.e. it allows you to combine your statistical analysis and the presentation of the results into one document. It works with R and a number of other languages such as Bash, Python, and Ruby.</p>
-        </div>
-      </div>
+        <!-- About the Book -->
+        <section id="overview">
+            <div class="page-header">
+                <h2>Overview of the Book</h2>
+            </div>
+            <div class="row">
+                <div class="span11">
+                    <blockquote><em>Reproducible Research with R &amp; RStudio</em> gives you tools for data gathering, analysis, and presentation of results so that you can create dynamic and highly reproducible research.</blockquote>
+                    <br>
+                    <p class="lead"><strong>Tools you will learn as part of a reproducible research workflow:</strong>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><a href="http://www.r-project.org/">R</a>: a programming language primarily for statistics and graphics. We will focus on using it for dynamic data gathering and presenting results.</p>
+                </div>
+                <div class="span5">
+                    <p><a href="http://yihui.name/knitr/">knitr</a>: an R package for literate programming, i.e. it allows you to combine your statistical analysis and the presentation of the results into one document. It works with R and a number of other
+                        languages such as Bash, Python, and Ruby.</p>
+                </div>
+            </div>
 
-      <div class="row">
-        <div class="span5 offset1">
-          <p><strong>Markup languages</strong>: instructions for how to format a presentation document. Specifically we cover <a href="http://www.latex-project.org/">LaTeX</a> for creating PDF articles and slide shows, as well as <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, and a little <a href="http://en.wikipedia.org/wiki/HTML">HTML</a> for presenting results on the web.</p>
-        </div>
-        <div class="span5">
-         <p><strong>Unix-like shell programs</strong>: These tools are useful for working with large research projects. They also allow us to use command line tools including <a href="http://www.gnu.org/software/make/">GNU Make</a> for compiling projects and <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, a program useful for converting documents from one markup language to another.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span5 offset1">
-          <p><strong>Cloud storage &amp; versioning</strong>: Services such as <a href="https://www.dropbox.com">Dropbox</a> and <a href="http://git-scm.com/">Git</a>/<a href="https://github.com/">Github</a> that can store data, code, and presentation files, save previous versions of these files, and make this information widely available.</p>
-        </div>
-        <div class="span5">
-          <p><a href="http://www.rstudio.com/">RStudio</a>: an integrated developer environment (IDE) for R that tightly integrates these reproducible research tools in one place.</p>
-        </div>
-      </div>
-    </section>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><strong>Markup languages</strong>: instructions for how to format a presentation document. Specifically we cover <a href="http://www.latex-project.org/">LaTeX</a> for creating PDF articles and slide shows, as well as <a href="http://daringfireball.net/projects/markdown/">Markdown</a>,
+                        and a little <a href="http://en.wikipedia.org/wiki/HTML">HTML</a> for presenting results on the web.</p>
+                </div>
+                <div class="span5">
+                    <p><strong>Unix-like shell programs</strong>: These tools are useful for working with large research projects. They also allow us to use command line tools including <a href="http://www.gnu.org/software/make/">GNU Make</a> for compiling
+                        projects and <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, a program useful for converting documents from one markup language to another.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><strong>Cloud storage &amp; versioning</strong>: Services such as <a href="https://www.dropbox.com">Dropbox</a> and <a href="http://git-scm.com/">Git</a>/<a href="https://github.com/">Github</a> that can store data, code, and presentation
+                        files, save previous versions of these files, and make this information widely available.</p>
+                </div>
+                <div class="span5">
+                    <p><a href="http://www.rstudio.com/">RStudio</a>: an integrated developer environment (IDE) for R that tightly integrates these reproducible research tools in one place.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Who Should Read the Book? -->
-    <section id="who">
-      <div class="page-header">
-        <h2>Who Should Read the Book?</h2>
-      </div>
-      <div class="row">
-        <div class="span5 offset1">
-          <p><strong>Academic Researchers</strong>: This book is intended to be a practical guide for how to actually make your research reproducible. Even if you already use tools such as R and LaTeX you may not be leveraging their full potential. This book will teach you useful ways to get the most out of them as part of a reproducible research workflow.</p>
-        </div>
-        <div class="span5">
-          <p><strong>Students</strong>: Upper-level undergraduate and graduate students conducting original computational research should make your research reproducible. Forcing yourself to clearly document the steps you took will also encourage you to think more clearly about what you are doing and reinforce what you are learning. It will hopefully give you a greater appreciation of research accountability and integrity early in your career.</p>
-        </div>
-      </div>
+        <!-- Who Should Read the Book? -->
+        <section id="who">
+            <div class="page-header">
+                <h2>Who Should Read the Book?</h2>
+            </div>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><strong>Academic Researchers</strong>: This book is intended to be a practical guide for how to actually make your research reproducible. Even if you already use tools such as R and LaTeX you may not be leveraging their full potential.
+                        This book will teach you useful ways to get the most out of them as part of a reproducible research workflow.</p>
+                </div>
+                <div class="span5">
+                    <p><strong>Students</strong>: Upper-level undergraduate and graduate students conducting original computational research should make your research reproducible. Forcing yourself to clearly document the steps you took will also encourage
+                        you to think more clearly about what you are doing and reinforce what you are learning. It will hopefully give you a greater appreciation of research accountability and integrity early in your career.</p>
+                </div>
+            </div>
 
-      <div class="row">
-        <div class="span5 offset1">
-          <p><strong>Instructors</strong>: When instructors incorporate the tools of reproducible research into their assignments they not only build students’ understanding of research best practice, but are also better able to evaluate and provide meaningful feedback on students’ work. This book provides a resource that you can use with students to put reproducibility into practice.</p>
-        </div>
-        <div class="span5">
-          <p><strong>Editors</strong>: Beyond a lack of reproducible research skills among researchers, an impediment to actually creating reproducible research is a lack of infrastructure to publish it. Hopefully, this book will be useful for editors at academic publishers who want to be better at evaluating reproducible research, editing it, and developing systems to make it more widely available.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span5 offset1">
-          <p><strong>Private Sector Researchers</strong>: Researchers in the private sector may or may not want to make their work easily reproducible outside of their organization. However, that does not mean that significant benefits cannot be gained from using the methods of reproducible research. Making your research reproducible to members of your organization can spread valuable information about how analyses were done and data was collected. This will help build your organization’s knowledge and avoid effort duplication. </p>
-        </div>
-      </div>
-    </section>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><strong>Instructors</strong>: When instructors incorporate the tools of reproducible research into their assignments they not only build students’ understanding of research best practice, but are also better able to evaluate and provide
+                        meaningful feedback on students’ work. This book provides a resource that you can use with students to put reproducibility into practice.</p>
+                </div>
+                <div class="span5">
+                    <p><strong>Editors</strong>: Beyond a lack of reproducible research skills among researchers, an impediment to actually creating reproducible research is a lack of infrastructure to publish it. Hopefully, this book will be useful for
+                        editors at academic publishers who want to be better at evaluating reproducible research, editing it, and developing systems to make it more widely available.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span5 offset1">
+                    <p><strong>Private Sector Researchers</strong>: Researchers in the private sector may or may not want to make their work easily reproducible outside of their organization. However, that does not mean that significant benefits cannot be
+                        gained from using the methods of reproducible research. Making your research reproducible to members of your organization can spread valuable information about how analyses were done and data was collected. This will help build
+                        your organization’s knowledge and avoid effort duplication.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- TOC -->
-    <section id="toc">
-      <div class="page-header">
-        <h2>Table of Contents</h2>
-      </div>
-      <div class="row">
-        <div class="span11">
-          <p><strong>Download</strong> the full table of contents: <a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearchTOC.pdf"><img src="img/PDF_Logo.png" alt="Download PDF" height="20" width="20"></a></p>
-          <p>Click the links below to download sample chapters or visit <a href="http://books.google.co.kr/books/about/Reproducible_Research_With_R_and_Rstudio.html?id=u-nuzKGvoZwC&redir_esc=y">Google Books</a>. </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span8 offset1">
-            <br>
-            <ol>
-              <center><p class="leading"><strong>Part I: Getting Started</strong></p></center>       
-
-
-              <li>Introducing Reproducible Research</li>
-
-              <li><a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter2.pdf">Getting Started with Reproducible Research</a></li>
-
-              <li>Getting Started with R, RStudio, and knitr</li>
-
-              <li>Getting Started with File Management</li>
-              <br>
-            <center><p class="leading"><strong>Part II: Data Gathering and Storage</strong></p></center>
-
-              <li>Storing, Collaborating, Accessing Files, Versioning</li>
-
-              <li>Gathering Data with R</li>
-
-              <li>Preparing Data for Analysis</li>
-              <br>
-            <center><p class="leading"><strong>Part III: Analysis and Results</strong></p></center>
-
-              <li>Statistical Modelling and knitr</li>
-
-              <li><a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf">Showing Results with Tables</a></li>
-
-              <li>Showing Results with Figures</li>
-              <br>
-            <center><p class="leading"><strong>Part IV: Presentation Documents</strong></p></center>
-
-              <li>Presenting with LaTeX</li>
-
-              <li>Large LaTeX Documents: Theses, Books, & Batch Reports</li>
-
-              <li>Presenting on the Web with Markdown</li>
-
-              <li>Conclusion</li>
-
-            </ol> 
-        </div>
-      </div>
-
-    </section>
+        <!-- TOC -->
+        <section id="toc">
+            <div class="page-header">
+                <h2>Table of Contents</h2>
+            </div>
+            <div class="row">
+                <div class="span11">
+                    <p><strong>Download</strong> the full table of contents:
+                        <a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearchTOC.pdf">
+                            <img src="img/PDF_Logo.png" alt="Download PDF" height="20" width="20">
+                        </a>
+                    </p>
+                    <p>Click the links below to download sample chapters or visit <a href="http://books.google.co.kr/books/about/Reproducible_Research_With_R_and_Rstudio.html?id=u-nuzKGvoZwC&redir_esc=y">Google Books</a>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span8 offset1">
+                    <br>
+                    <ol>
+                        <center>
+                            <p class="leading"><strong>Part I: Getting Started</strong>
+                            </p>
+                        </center>
 
 
-    <!-- Purchase -->
-    <section id="purchase">
-      <div class="page-header">
-        <h2>Purchase</h2>
-      </div>
-      <div class="row">
-        <div class="span10 offset1">
-          <p>You can <strong>order</strong> it from:</p>
-          <br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3 offset2">
-          <a href="http://www.crcpress.com/product/isbn/9781466572843"><img src="img/Chapman_logo.png" alt="Purchase from Chapman and Hall" height="70" width="150"></a>
-        </div>
-        <div class="span5">
-          <a href="http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363670109&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio"><img src="img/AmazonCom_Logo.png" alt="Purchase from Amazon" height="50" width="150"></a>
-        </div>
-      </div>
-    </section>
+                        <li>Introducing Reproducible Research</li>
 
-    <!-- Extra Materials -->
-    <section>
-      <div class="page-header" id="supplement">
-        <h2>Extra Materials</h2>
-      </div>
-      <div class="row">
-        <div class="span10 offset1">
-          <p>You can freely download supplementary files used for examples discussed in the books chapters as well as a short, but complete reproducible research project.</p>
-          <br><br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4 offset1">
-          <a class="span4 btn btn-warning btn-large" href="https://github.com/christophergandrud/Rep-Res-Examples">Chapter Examples</a>
-        </div>
-        <div class="span4 offset1">
-          <a class="span4 btn btn-warning btn-large" href="https://github.com/christophergandrud/Rep-Res-ExampleProject1">Example Project</a>
-        </div>
-      </div>
-      <br><br>
-      <div class="row">
-        <div class="span10 offset1">
-          <p>In addition, feel free to install the <a href="http://christophergandrud.github.com/repmis/">repmis</a> package for R. The package includes tools for loading and citing other R packages (including old versions) and sourcing data sets from secure (https) URLs, including from <a href="https://www.dropbox.com/">Dropbox</a> and <a href="https://github.com/">GitHub</a>. These functions are coverd in more detail in the book. You can install <strong>repmis</strong> directly from <a href="http://cran.r-project.org/">CRAN</a> with the following code:</p>
-          <br>
-<pre><code class="R"># Install rempmis package from CRAN
-install.packages("repmis")</code></pre>
-        </div>
-      </div>
+                        <li><a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter2.pdf">Getting Started with Reproducible Research</a>
+                        </li>
 
+                        <li>Getting Started with R, RStudio, and knitr</li>
 
-    </section>
+                        <li>Getting Started with File Management</li>
+                        <br>
+                        <center>
+                            <p class="leading"><strong>Part II: Data Gathering and Storage</strong>
+                            </p>
+                        </center>
 
-    <!-- About the Author -->
-    <section id="author">
-      <div class="page-header">
-        <h2>About the Author</h2>
-      </div>
-      <div class="row">
-        <div class="span10 offset1">
-          <p>I am a Research Fellow at the <a href="http://www.hertie-school.org/facultyandresearch/research-centres/research-centres/fiscal-governance-centre/">Fiscal Governance Centre, Hertie School of Governance</a>. My <a href="http://christophergandrud.blogspot.kr/p/research.html">research</a> focuses on the international political economy of public financial and monetary institutions, as well as applied social science statistics. My work has been published in the <a href="http://www.tandfonline.com/loi/rrip20">Review of International Political Economy</a>, <a href="http://polmeth.wustl.edu/methodologist.php">The Political Methodologist</a>, and the <a href="http://ips.sagepub.com/">International Political Science Review</a>.</p> 
+                        <li>Storing, Collaborating, Accessing Files, Versioning</li>
 
-          <p>I have been a lecturer at <a href="http://www.yonsei.ac.kr/eng/">Yonsei University</a> and a Fellow in Government at the <a href="http://www2.lse.ac.uk/home.aspx">London School of Economics</a>. In 2012 I completed a PhD in political science and quantitative methods at LSE.</p>
+                        <li>Gathering Data with R</li>
 
-          <p>When I stumble upon a tool that helps me do research better I share it on my <a href="http://christophergandrud.blogspot.com/">blog</a> or on Twitter at <a href="https://twitter.com/ChrisGandrud">@ChrisGandrud</a>. </p>
-        </div>
-      </div>
-    </section>  
+                        <li>Preparing Data for Analysis</li>
+                        <br>
+                        <center>
+                            <p class="leading"><strong>Part III: Analysis and Results</strong>
+                            </p>
+                        </center>
 
-    <!-- Suggestions -->
-    <section id="suggestions">
-      <div class="page-header">
-        <h2>Updates/Suggestions/Errata</h2>
-      </div>
-      <div class="row">
-        <div class="span10 offset1">
-          <p>The software underlying <a href="index.html">Reproducible Research with R and RStudio</a> is constantly changing. Please see the Book's <a href="updates.htm">Updates</a> page for a list of major software updates. I am continually working on an <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">updated version</a> of the Book that will include these updates.</p>
+                        <li>Statistical Modelling and knitr</li>
 
-          <p>If you notice software changes that should be noted on the <a href="updates.htm">Updates</a> page or have any suggestions for future editions of the book, including new reproducible research technologies to cover, feel free to leave a comment on the <a href="https://github.com/christophergandrud/Rep-Res-Book/issues/27">Book's development page</a>.</p> 
+                        <li><a href="https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf">Showing Results with Tables</a>
+                        </li>
 
-          <p>Corrections to typos in the current printed version be found on the <a href="errata.htm">Errata page</a>.</p>
-        </div>
-      </div>
-    </section>
+                        <li>Showing Results with Figures</li>
+                        <br>
+                        <center>
+                            <p class="leading"><strong>Part IV: Presentation Documents</strong>
+                            </p>
+                        </center>
+
+                        <li>Presenting with LaTeX</li>
+
+                        <li>Large LaTeX Documents: Theses, Books, & Batch Reports</li>
+
+                        <li>Presenting on the Web with Markdown</li>
+
+                        <li>Conclusion</li>
+
+                    </ol>
+                </div>
+            </div>
+
+        </section>
 
 
-    <br><br>
-    <!-- Footer
-    ================================================== -->     
-    <div class="row">
-      <div class="span12">
-        <hr>
+        <!-- Purchase -->
+        <section id="purchase">
+            <div class="page-header">
+                <h2>Purchase</h2>
+            </div>
+            <div class="row">
+                <div class="span10 offset1">
+                    <p>You can <strong>order</strong> it from:</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3 offset2">
+                    <a href="http://www.crcpress.com/product/isbn/9781466572843">
+                        <img src="img/Chapman_logo.png" alt="Purchase from Chapman and Hall" height="70" width="150">
+                    </a>
+                </div>
+                <div class="span5">
+                    <a href="http://www.amazon.com/Reproducible-Research-RStudio-Chapman-Series/dp/1466572841/ref=sr_1_1?ie=UTF8&qid=1363670109&sr=8-1&keywords=Reproducible+research+with+R+and+RStudio">
+                        <img src="img/AmazonCom_Logo.png" alt="Purchase from Amazon" height="50" width="150">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <footer id="footer">
-            <p class="pull-right"><a href="#top">Back to top</a>
-            <br><br><br>
-            <a href="http://www.crcpress.com/"><img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="80" height="30"></a>
-            </p>
-            <p>&copy; Christopher Gandrud (2014) <a href="http://christophergandrud.blogspot.kr/p/biocontact.html"><img src="http://www.gravatar.com/avatar/97142016bfb86beaecef6e3251c82a98.png" alt="Blog Avatar" height="20" width="20"></p>
-            <div class="links">
-              <a href="http://christophergandrud.blogspot.com/">Blog </a>
-              <a href="mailto:christopher.gandrud@gmail.com">Email</a>
-              <a href="https://twitter.com/ChrisGandrud"><i class="fa fa-twitter"></i></a>
-              <a href="https://github.com/christophergandrud"><i class="fa fa-github fa-lg"></i></a>
+        <!-- Extra Materials -->
+        <section>
+            <div class="page-header" id="supplement">
+                <h2>Extra Materials</h2>
+            </div>
+            <div class="row">
+                <div class="span10 offset1">
+                    <p>You can freely download supplementary files used for examples discussed in the books chapters as well as a short, but complete reproducible research project.</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span4 offset1">
+                    <a class="span4 btn btn-warning btn-large" href="https://github.com/christophergandrud/Rep-Res-Examples">Chapter Examples</a>
+                </div>
+                <div class="span4 offset1">
+                    <a class="span4 btn btn-warning btn-large" href="https://github.com/christophergandrud/Rep-Res-ExampleProject1">Example Project</a>
+                </div>
             </div>
             <br>
-            The site is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://bootswatch.com/cosmo/">Bootswatch Cosmo</a>.
-        </footer>
-      </div>
-    </div>
+            <br>
+            <div class="row">
+                <div class="span10 offset1">
+                    <p>In addition, feel free to install the <a href="http://christophergandrud.github.com/repmis/">repmis</a> package for R. The package includes tools for loading and citing other R packages (including old versions) and sourcing data sets
+                        from secure (https) URLs, including from <a href="https://www.dropbox.com/">Dropbox</a> and <a href="https://github.com/">GitHub</a>. These functions are coverd in more detail in the book. You can install <strong>repmis</strong> directly
+                        from <a href="http://cran.r-project.org/">CRAN</a> with the following code:</p>
+                    <br>
+                    <pre><code class="R"># Install rempmis package from CRAN
+install.packages("repmis")</code></pre>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- About the Author -->
+        <section id="author">
+            <div class="page-header">
+                <h2>About the Author</h2>
+            </div>
+            <div class="row">
+                <div class="span10 offset1">
+                    <p>I am a Research Fellow at the <a href="http://www.hertie-school.org/facultyandresearch/research-centres/research-centres/fiscal-governance-centre/">Fiscal Governance Centre, Hertie School of Governance</a>. My <a href="http://christophergandrud.blogspot.kr/p/research.html">research</a> focuses
+                        on the international political economy of public financial and monetary institutions, as well as applied social science statistics. My work has been published in the <a href="http://www.tandfonline.com/loi/rrip20">Review of International Political Economy</a>,
+                        <a
+                        href="http://polmeth.wustl.edu/methodologist.php">The Political Methodologist</a>, and the <a href="http://ips.sagepub.com/">International Political Science Review</a>.</p>
+
+                    <p>I have been a lecturer at <a href="http://www.yonsei.ac.kr/eng/">Yonsei University</a> and a Fellow in Government at the <a href="http://www2.lse.ac.uk/home.aspx">London School of Economics</a>. In 2012 I completed a PhD in political
+                        science and quantitative methods at LSE.</p>
+
+                    <p>When I stumble upon a tool that helps me do research better I share it on my <a href="http://christophergandrud.blogspot.com/">blog</a> or on Twitter at <a href="https://twitter.com/ChrisGandrud">@ChrisGandrud</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suggestions -->
+        <section id="suggestions">
+            <div class="page-header">
+                <h2>Updates/Suggestions/Errata</h2>
+            </div>
+            <div class="row">
+                <div class="span10 offset1">
+                    <p>The software underlying <a href="index.html">Reproducible Research with R and RStudio</a> is constantly changing. Please see the Book's <a href="updates.htm">Updates</a> page for a list of major software updates. I am continually working
+                        on an <a href="https://github.com/christophergandrud/Rep-Res-Book/tree/Version2">updated version</a> of the Book that will include these updates.</p>
+
+                    <p>If you notice software changes that should be noted on the <a href="updates.htm">Updates</a> page or have any suggestions for future editions of the book, including new reproducible research technologies to cover, feel free to leave
+                        a comment on the <a href="https://github.com/christophergandrud/Rep-Res-Book/issues/27">Book's development page</a>.</p>
+
+                    <p>Corrections to typos in the current printed version be found on the <a href="errata.htm">Errata page</a>.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <!-- Footer
+    ================================================== -->
+        <div class="row">
+            <div class="span12">
+                <hr>
+
+                <footer id="footer">
+                    <p class="pull-right"><a href="#top">Back to top</a>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="http://www.crcpress.com/">
+                            <img src="img/Chapman_logo.png" alt="Chapman and Hall Logo" width="80" height="30">
+                        </a>
+                    </p>
+                    <p>&copy; Christopher Gandrud (2014)
+                        <a href="http://christophergandrud.blogspot.kr/p/biocontact.html">
+                            <img src="http://www.gravatar.com/avatar/97142016bfb86beaecef6e3251c82a98.png" alt="Blog Avatar" height="20" width="20">
+                    </p>
+                    <div class="links">
+                        <a href="http://christophergandrud.blogspot.com/">Blog </a>
+                        <a href="mailto:christopher.gandrud@gmail.com">Email</a>
+                        <a href="https://twitter.com/ChrisGandrud"><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/christophergandrud"><i class="fa fa-github fa-lg"></i></a>
+                    </div>
+                    <br>The site is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://bootswatch.com/cosmo/">Bootswatch Cosmo</a>.
+                </footer>
+            </div>
+        </div>
     </div>
 
-    <br><br>
+    <br>
+    <br>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39387415-1']);
+        _gaq.push(['_trackPageview']);
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-39387415-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
     </script>
 
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -366,6 +439,9 @@ install.packages("repmis")</code></pre>
     <!-- Code syntax highlight -->
     <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/solarized_light.min.css">
     <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
 </html>
